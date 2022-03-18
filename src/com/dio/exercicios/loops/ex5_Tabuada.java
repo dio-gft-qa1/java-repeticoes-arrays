@@ -24,12 +24,9 @@ public class ex5_Tabuada {
         System.out.println("Digite um número de 1 a 10 para saber a tabuada: ");
         number = scan.nextInt();
 
-        if (number >= 1 & number <= 10) {
-            for (int count = 1; count < 10; count++) {
-                System.out.println(number + " X " + count + " = " + count*number);
-            }
-        } else {
-            System.out.println("Número inválido. Tente novamente.");
+        System.out.println("Tabuada de " + number);
+        for (int count = 1; count <= 10; count++) {
+            System.out.println(number + " X " + count + " = " + count*number);
         }
     }
 }
